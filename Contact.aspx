@@ -39,7 +39,7 @@
 										<h4>Location Map</h4>
 									</div>
 									<div class="content-map">
-										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54820.77174237603!2d75.15290838154367!3d30.822308500621933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a08620d7489c9%3A0x17a3d439cd1d10ad!2sMoga%2C+Punjab+142001!5e0!3m2!1sen!2sin!4v1467478659440" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>									</div>
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3426.308421068784!2d75.17190231473991!3d30.82202298160619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a088c4d187b9d%3A0x6de939b24c270875!2sFuture+Vision!5e0!3m2!1sen!2sin!4v1537202686940" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>								</div>
 								</div>
 							</div>
 							<div class="col-md-6">
