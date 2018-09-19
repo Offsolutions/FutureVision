@@ -91,7 +91,7 @@ public partial class _Default : System.Web.UI.Page
     protected void news()
     {
 
-        SqlCommand cmd = new SqlCommand("selectNews", MyCon);
+        SqlCommand cmd = new SqlCommand("selectActiveNews", MyCon);
 
         cmd.CommandType = CommandType.StoredProcedure;
 

@@ -78,6 +78,9 @@ public partial class Auth_add_edit_page : System.Web.UI.Page
             cmd.Parameters.AddWithValue("@Image", imagename);
 
             cmd.Parameters.AddWithValue("@Description", txtdes.Text);
+            cmd.Parameters.AddWithValue("@keyword", txtkey.Text);
+
+            cmd.Parameters.AddWithValue("@shortdes", txtshort.Text);
 
             MyCon.Open();
 
@@ -96,6 +99,9 @@ public partial class Auth_add_edit_page : System.Web.UI.Page
             cmd.Parameters.AddWithValue("@Image", imagename);
 
             cmd.Parameters.AddWithValue("@Description", txtdes.Text);
+            cmd.Parameters.AddWithValue("@keyword", txtkey.Text);
+
+            cmd.Parameters.AddWithValue("@shortdes", txtshort.Text);
 
             cmd.Parameters.AddWithValue("@Status", 1);
 
@@ -176,6 +182,8 @@ public partial class Auth_add_edit_page : System.Web.UI.Page
                 txtname.Text = ds.Tables[0].Rows[0]["Name"].ToString();
                 img = ds.Tables[0].Rows[0]["Image"].ToString();
                 txtdes.Text = ds.Tables[0].Rows[0]["Description"].ToString();
+                txtkey.Text = ds.Tables[0].Rows[0]["keyword"].ToString();
+                txtshort.Text = ds.Tables[0].Rows[0]["shortdes"].ToString();
                 ds.Clear();
             }
         }

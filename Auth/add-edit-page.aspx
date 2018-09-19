@@ -22,6 +22,16 @@
                <asp:TextBox ID="txtdes" runat="server" class="form-control" 
                    placeholder="Enter Description" TextMode="MultiLine"></asp:TextBox>
           </div>
+           <div class="form-group">
+               <label>Keyword</label>
+               <asp:TextBox ID="txtkey" runat="server" class="form-control" 
+                   placeholder="Enter Value" ></asp:TextBox>
+          </div>
+           <div class="form-group">
+               <label>Short Description</label>
+               <asp:TextBox ID="txtshort" runat="server" class="form-control" 
+                   placeholder="Enter Value" TextMode="MultiLine"></asp:TextBox>
+          </div>
           <div class="form-group">
                    <asp:Button CssClass="btn-success" ID="btnsubmit" runat="server" 
                        Text="Submit" onclick="btnsubmit_Click" />

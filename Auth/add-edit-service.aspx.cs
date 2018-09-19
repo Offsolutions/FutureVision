@@ -95,6 +95,9 @@ public partial class Auth_add_edit_service : System.Web.UI.Page
             cmd.Parameters.AddWithValue("@Duration", txtdur.Text);
             cmd.Parameters.AddWithValue("@Type", ddltype.SelectedItem.Text);
             cmd.Parameters.AddWithValue("@priority", txtpre.Text);
+            cmd.Parameters.AddWithValue("@keyword", txtkey.Text);
+
+            cmd.Parameters.AddWithValue("@shortdes", txtshort.Text);
             MyCon.Open();
 
             cmd.ExecuteNonQuery();
@@ -117,6 +120,9 @@ public partial class Auth_add_edit_service : System.Web.UI.Page
             cmd.Parameters.AddWithValue("@Duration", txtdur.Text);
             cmd.Parameters.AddWithValue("@Type", ddltype.SelectedItem.Text);
             cmd.Parameters.AddWithValue("@priority", txtpre.Text);
+            cmd.Parameters.AddWithValue("@keyword", txtkey.Text);
+
+            cmd.Parameters.AddWithValue("@shortdes", txtshort.Text);
             MyCon.Open();
 
             cmd.ExecuteNonQuery();
@@ -201,6 +207,8 @@ public partial class Auth_add_edit_service : System.Web.UI.Page
                 img = ds.Tables[0].Rows[0]["Image"].ToString();
                 txtdes.Text = ds.Tables[0].Rows[0]["Description"].ToString();
                 ddltype.SelectedItem.Text = ds.Tables[0].Rows[0]["type"].ToString();
+                txtkey.Text = ds.Tables[0].Rows[0]["keyword"].ToString();
+                txtshort.Text = ds.Tables[0].Rows[0]["shortdes"].ToString();
                 ds.Clear();
             }
         }

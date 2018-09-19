@@ -73,14 +73,6 @@
                                     </div>
                                     <div class="navbar-collapse navbar-right collapse" aria-expanded="false" style="height: 1px;">
 
-
-
-
-
-
-
-
-
                                         <ul class="nav navbar-nav navbar-right">
 
                                             <li class="active"><a href="Default.aspx">Home</a></li>
@@ -119,13 +111,8 @@
                             </div>
                         </div>
 
-
-
-
-
-
                     </header>
-                    
+
                     <div class="container-fluid" style="background: #415ba6">
                         <div class=" container">
                             <div class="col-sm-1">
@@ -136,16 +123,15 @@
                                     <div class="ti_wrapper">
                                         <div class="ti_slide">
                                             <div class="ti_content">
+
                                                 <asp:ListView ID="lvnews" runat="server">
                                                     <ItemTemplate>
-                                                        <div class="ti_news">
-
-                                                            <a href="#"><span></span><%#Eval("Description") %></a>
+                                                        <div class="ti_news" style="overflow: hidden;">
+                                                            <a href="#">
+                                                                <asp:Label ID="Label1" runat="server" Text='<%#Eval("Description") %>'></asp:Label></a>  |
                                                         </div>
-                                                        | 
                                                     </ItemTemplate>
                                                 </asp:ListView>
-
 
                                             </div>
                                         </div>
@@ -159,14 +145,14 @@
                             <ItemTemplate>
                                 <li>
                                     <img src="uploadimage/<%#Eval("Image") %>" alt=""></li>
-                               
+
                             </ItemTemplate>
                         </asp:ListView>
-                       
-                         
+
+
                     </ul>
 
-                    
+
                     <section class="popular-courses">
                         <div class="container-fluid">
                             <div class="row">
@@ -582,7 +568,7 @@
         $(function () {
             _Ticker = $(".TickerNews").newsTicker();
         });
-	    </script>
+    </script>
 
     <script src="assets/js/owl.carousel.js"></script>
     <script>
@@ -599,10 +585,10 @@
     </script>
     <script src="assets/css/responsiveslides.min.js"></script>
     <script>
-  $(function() {
-    $(".rslides").responsiveSlides();
-  });
-</script>
+        $(function () {
+            $(".rslides").responsiveSlides();
+        });
+    </script>
 </body>
 
 
